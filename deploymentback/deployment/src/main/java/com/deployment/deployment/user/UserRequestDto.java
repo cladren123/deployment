@@ -4,17 +4,12 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter
+@Setter
 @Builder
 public class UserRequestDto {
 
-    private final String id;
-    private final String password;
+    private final String userId;
+    private final String userPassword;
 
-    public String getId() {
-        return id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
 }

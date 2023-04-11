@@ -15,10 +15,13 @@ import javax.persistence.*;
 public class UserEntity {
 
     @Id
-    
-    private long userSeq;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_seq")
+    private Long userSeq;
 
-    private String userIdd;
+    @Column(name = "user_id")
+    private String userId;
+    @Column(name = "user_password")
     private String userPassword;
 
 
